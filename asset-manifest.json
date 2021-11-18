@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/alexandre34000/AlexandreCharlier_11_16112021/static/css/main.5630ed5f.chunk.css",
+    "main.js": "/alexandre34000/AlexandreCharlier_11_16112021/static/js/main.224e7206.chunk.js",
+    "main.js.map": "/alexandre34000/AlexandreCharlier_11_16112021/static/js/main.224e7206.chunk.js.map",
+    "runtime-main.js": "/alexandre34000/AlexandreCharlier_11_16112021/static/js/runtime-main.e81160b4.js",
+    "runtime-main.js.map": "/alexandre34000/AlexandreCharlier_11_16112021/static/js/runtime-main.e81160b4.js.map",
+    "static/js/2.e1c1684e.chunk.js": "/alexandre34000/AlexandreCharlier_11_16112021/static/js/2.e1c1684e.chunk.js",
+    "static/js/2.e1c1684e.chunk.js.map": "/alexandre34000/AlexandreCharlier_11_16112021/static/js/2.e1c1684e.chunk.js.map",
+    "static/js/3.bac26508.chunk.js": "/alexandre34000/AlexandreCharlier_11_16112021/static/js/3.bac26508.chunk.js",
+    "static/js/3.bac26508.chunk.js.map": "/alexandre34000/AlexandreCharlier_11_16112021/static/js/3.bac26508.chunk.js.map",
+    "index.html": "/alexandre34000/AlexandreCharlier_11_16112021/index.html",
+    "static/css/main.5630ed5f.chunk.css.map": "/alexandre34000/AlexandreCharlier_11_16112021/static/css/main.5630ed5f.chunk.css.map",
+    "static/js/2.e1c1684e.chunk.js.LICENSE.txt": "/alexandre34000/AlexandreCharlier_11_16112021/static/js/2.e1c1684e.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/alexandre34000/AlexandreCharlier_11_16112021/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e81160b4.js",
+    "static/js/2.e1c1684e.chunk.js",
+    "static/css/main.5630ed5f.chunk.css",
+    "static/js/main.224e7206.chunk.js"
+  ]
+}
