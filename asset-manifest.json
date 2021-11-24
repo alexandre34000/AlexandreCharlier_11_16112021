@@ -1,26 +1,24 @@
 {
   "files": {
-    "main.css": "/AlexandreCharlier_11_16112021/static/css/main.a49bac22.chunk.css",
-    "main.js": "/AlexandreCharlier_11_16112021/static/js/main.2c06ff9a.chunk.js",
-    "main.js.map": "/AlexandreCharlier_11_16112021/static/js/main.2c06ff9a.chunk.js.map",
-    "runtime-main.js": "/AlexandreCharlier_11_16112021/static/js/runtime-main.18e4458d.js",
-    "runtime-main.js.map": "/AlexandreCharlier_11_16112021/static/js/runtime-main.18e4458d.js.map",
-    "static/js/2.e03df253.chunk.js": "/AlexandreCharlier_11_16112021/static/js/2.e03df253.chunk.js",
-    "static/js/2.e03df253.chunk.js.map": "/AlexandreCharlier_11_16112021/static/js/2.e03df253.chunk.js.map",
-    "static/js/3.9fc464a6.chunk.js": "/AlexandreCharlier_11_16112021/static/js/3.9fc464a6.chunk.js",
-    "static/js/3.9fc464a6.chunk.js.map": "/AlexandreCharlier_11_16112021/static/js/3.9fc464a6.chunk.js.map",
+    "main.css": "/AlexandreCharlier_11_16112021/static/css/main.a80fff60.chunk.css",
+    "main.js": "/AlexandreCharlier_11_16112021/static/js/main.c890a9f7.chunk.js",
+    "main.js.map": "/AlexandreCharlier_11_16112021/static/js/main.c890a9f7.chunk.js.map",
+    "runtime-main.js": "/AlexandreCharlier_11_16112021/static/js/runtime-main.4a51bb4b.js",
+    "runtime-main.js.map": "/AlexandreCharlier_11_16112021/static/js/runtime-main.4a51bb4b.js.map",
+    "static/js/2.1b8014ab.chunk.js": "/AlexandreCharlier_11_16112021/static/js/2.1b8014ab.chunk.js",
+    "static/js/2.1b8014ab.chunk.js.map": "/AlexandreCharlier_11_16112021/static/js/2.1b8014ab.chunk.js.map",
+    "static/js/3.fcc00d39.chunk.js": "/AlexandreCharlier_11_16112021/static/js/3.fcc00d39.chunk.js",
+    "static/js/3.fcc00d39.chunk.js.map": "/AlexandreCharlier_11_16112021/static/js/3.fcc00d39.chunk.js.map",
     "index.html": "/AlexandreCharlier_11_16112021/index.html",
-    "static/css/main.a49bac22.chunk.css.map": "/AlexandreCharlier_11_16112021/static/css/main.a49bac22.chunk.css.map",
-    "static/js/2.e03df253.chunk.js.LICENSE.txt": "/AlexandreCharlier_11_16112021/static/js/2.e03df253.chunk.js.LICENSE.txt",
+    "static/css/main.a80fff60.chunk.css.map": "/AlexandreCharlier_11_16112021/static/css/main.a80fff60.chunk.css.map",
+    "static/js/2.1b8014ab.chunk.js.LICENSE.txt": "/AlexandreCharlier_11_16112021/static/js/2.1b8014ab.chunk.js.LICENSE.txt",
     "static/media/aboutDesktop.02e1c4f7.png": "/AlexandreCharlier_11_16112021/static/media/aboutDesktop.02e1c4f7.png",
-    "static/media/aboutMobile.09998aa5.png": "/AlexandreCharlier_11_16112021/static/media/aboutMobile.09998aa5.png",
-    "static/media/bandeauMobile.36c53dfb.png": "/AlexandreCharlier_11_16112021/static/media/bandeauMobile.36c53dfb.png",
-    "static/media/bandeaudesktop.024f945a.png": "/AlexandreCharlier_11_16112021/static/media/bandeaudesktop.024f945a.png"
+    "static/media/bandeauDesktop.024f945a.png": "/AlexandreCharlier_11_16112021/static/media/bandeauDesktop.024f945a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.18e4458d.js",
-    "static/js/2.e03df253.chunk.js",
-    "static/css/main.a49bac22.chunk.css",
-    "static/js/main.2c06ff9a.chunk.js"
+    "static/js/runtime-main.4a51bb4b.js",
+    "static/js/2.1b8014ab.chunk.js",
+    "static/css/main.a80fff60.chunk.css",
+    "static/js/main.c890a9f7.chunk.js"
   ]
 }
