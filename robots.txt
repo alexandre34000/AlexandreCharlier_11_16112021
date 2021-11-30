@@ -2,4 +2,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://alexandre34000.github.io/AlexandreCharlier_11_16112021/.
+Sitemap: https://alexandre34000.github.io/AlexandreCharlier_11_16112021/sitemap.xml.
