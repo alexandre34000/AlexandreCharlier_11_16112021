@@ -1,15 +1,27 @@
 {
   "short_name": "Kasa",
   "name": "Kasa location de logement",
-  "icons": 
+  "icons": [
     {
-      "src": "logoKasa",
-      "sizes": "211x68",
-      "type": "image/png"
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
     },
+    {
+      "src": "kasa192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "kasa512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "description": "Kasa, location de logements entre particuliers"
 }
+
