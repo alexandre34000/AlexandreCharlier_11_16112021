@@ -1,0 +1,708 @@
+@charset "UTF-8";
+/**
+* _variables.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : déclaration des variables pour ce projet.
+* Date: novembre 2021. 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/*--colors and score WCAG--*/
+/*--Buttons--*/
+/*--links--*/
+/*--divers--*/
+/*--font--*/
+/*--font-familly--*/
+/*--media query--*/
+/**
+* _mixins.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : déclaration des mixins pour ce projet.
+* Date: novembre 2021. 
+*/
+/*-- Media query-- */
+/**
+* _bases.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style de base pour ce projet.
+* Date: novembre 2021. 
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  min-width: 350px;
+  max-width: 1800px;
+  box-sizing: border-box;
+  margin: 0 auto; }
+
+ul,
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+/**
+* _font.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style du font pour ce projet.
+* Date: novembre 2021. 
+*/
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Montserrat", sans-serif, sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem; }
+
+/**
+* _cards.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style des cards pour la page home de ce  ce projet.
+* Date: novembre 2021. 
+*/
+.content-section {
+  position: relative;
+  min-width: 305px;
+  max-width: 335px;
+  height: 255px;
+  margin-bottom: 20px;
+  overflow: hidden; }
+  @media screen and (min-width: 960px) {
+    .content-section {
+      width: 340px;
+      height: 340px;
+      margin: 25px 5px; } }
+
+.content-section:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 10px; }
+
+.content-section__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px; }
+
+.content-section__text {
+  position: absolute;
+  width: 250px;
+  height: 45px;
+  left: 20px;
+  bottom: 8px;
+  font-size: 1.8rem;
+  color: #ffffff;
+  z-index: 1;
+  overflow: hidden; }
+
+/**
+* _collapseBar.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style des button collapse pour le componsant dropDown et descriptif de ce  ce projet.
+* Date: novembre 2021. 
+*/
+.dropdown-btn {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0 11px;
+  background-color: #FF6060;
+  text-align: left;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #FFFFFF; }
+  @media screen and (min-width: 960px) {
+    .dropdown-btn {
+      padding: 0 18px; } }
+
+.dropdown-btn__arrowup {
+  position: absolute;
+  top: 9px;
+  right: 18px;
+  width: 17px; }
+  @media screen and (min-width: 960px) {
+    .dropdown-btn__arrowup {
+      top: 15px;
+      width: 30px;
+      right: 11px; } }
+
+.rotate {
+  transform: rotate(180deg); }
+
+/**
+* _slideShow.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style du slideShow pour le composant descriptif de ce  ce projet.
+* Date: novembre 2021. 
+*/
+.content-slideShow {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.slideShow-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.slideShow-arrow {
+  display: none;
+  position: absolute;
+  top: 40%;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  transition: transform .4s;
+  cursor: pointer; }
+  .slideShow-arrow:hover {
+    transform: scale(1.2); }
+  @media screen and (min-width: 960px) {
+    .slideShow-arrow {
+      display: block;
+      width: 80px;
+      height: 80px; } }
+
+.left {
+  left: 10px;
+  background-image: url("../../assets/arrow-left.png"); }
+  @media screen and (min-width: 960px) {
+    .left {
+      left: 20px; } }
+
+.right {
+  right: 10px;
+  background-image: url("../../assets/arrow-right.png"); }
+  @media screen and (min-width: 960px) {
+    .right {
+      right: 20px; } }
+
+.slideShow-number {
+  display: block;
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  font-size: 1.8rem; }
+
+/**
+* _stars.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style des stars rating pour le composant descriptif de ce  ce projet.
+* Date: novembre 2021. 
+*/
+.star {
+  display: inline-block;
+  background-size: cover;
+  width: 20px;
+  height: 20px; }
+  @media screen and (min-width: 960px) {
+    .star {
+      width: 30px;
+      height: 30px; } }
+
+.on {
+  background-image: url("../../assets/star-red-desktop.png"); }
+
+.off {
+  background-image: url("../../assets/star-grey-desktop.png"); }
+
+/**
+* _tags.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style des tags de ce projet.
+* Date: novembre 2021. 
+*/
+.content-tags {
+  display: inline-block;
+  width: 84px;
+  height: 18px;
+  color: #FFFFFF;
+  background-color: #FF6060;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 18px;
+  margin-right: 10px;
+  overflow: hidden; }
+  @media screen and (min-width: 960px) {
+    .content-tags {
+      width: 115px;
+      height: 25px;
+      border-radius: 10px;
+      line-height: 25px;
+      font-size: 1.4rem; } }
+
+/**
+* _bandeau.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style du bandeau pour ce projet.
+* Date: novembre 2021. 
+*/
+.bandeau-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative; }
+  @media screen and (min-width: 960px) {
+    .bandeau-content {
+      justify-content: center; } }
+
+.bandeau-content__img {
+  height: 100%;
+  width: 100%;
+  object-position: 100% 100%;
+  object-fit: cover; }
+  @media screen and (min-width: 576px) {
+    .bandeau-content__img {
+      object-position: 50% 50%; } }
+
+.filter {
+  -webkit-filter: brightness(70%);
+  filter: brightness(70%); }
+
+.bandeau-content__text {
+  display: block;
+  position: absolute;
+  width: 80%;
+  padding-left: 20px;
+  color: #ffffff;
+  font-size: 2.4rem; }
+  @media screen and (min-width: 768px) {
+    .bandeau-content__text {
+      width: auto;
+      font-size: 4.8rem; } }
+
+/**
+* _containerCards.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style du container des cards pour la page home de ce  ce projet.
+* Date: novembre 2021. 
+*/
+.content-gallery {
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0; }
+  @media screen and (min-width: 768px) {
+    .content-gallery {
+      padding: 45px 40px 25px 40px; } }
+
+/**
+* _dropDown.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style des dropDowns pourt la page About et descriptif de ce  ce projet.
+* Date: novembre 2021. 
+*/
+.dropdown-content {
+  border-radius: 0 0 50px 50px;
+  width: 100%;
+  margin-bottom: 20px; }
+  @media screen and (min-width: 960px) {
+    .dropdown-content {
+      margin-bottom: 30px; } }
+
+.dropdown-list {
+  display: block;
+  width: 100%;
+  max-height: 0;
+  margin-top: -5px;
+  border-radius: 0 0 5px 5px;
+  background-color: #F7F7F7;
+  color: #FF6060;
+  font-weight: 400;
+  overflow: hidden;
+  -webkit-animation: slideDown 1000ms linear 0ms 1 normal forwards;
+  -moz-animation: slideDown 1000ms linear 0ms 1 normal forwards;
+  -o-animation: slideDown 1000ms linear 0ms 1 normal forwards;
+  animation: slideDown 1000ms linear 0s 1 normal forwards; }
+
+.dropdown-list__ul {
+  padding: 22px 11px 19px 11px; }
+  @media screen and (min-width: 960px) {
+    .dropdown-list__ul {
+      padding: 33px 18px 19px 18px; } }
+
+@keyframes slideDown {
+  0% {
+    max-height: 0; }
+  100% {
+    max-height: 500px; } }
+
+/**
+* _footer.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style du footer pour ce projet.
+* Date: novembre 2021. 
+*/
+.footer-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 209px;
+  background-color: #000000;
+  margin-top: 50px; }
+
+.footer-content__logo {
+  width: 122px;
+  height: 40px;
+  margin-top: 66px; }
+
+.footer-content__p {
+  margin-top: 36px;
+  color: #ffffff; }
+  @media screen and (min-width: 960px) {
+    .footer-content__p {
+      font-size: 2.4rem; } }
+
+/**
+* _header.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style du header avec la navigation pour ce projet.
+* Date: novembre 2021. 
+*/
+.header-container {
+  width: 100%;
+  height: auto; }
+
+.header-content {
+  display: grid;
+  grid-template-columns: auto auto 50%;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 8px; }
+  @media screen and (min-width: 960px) {
+    .header-content {
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 40px;
+      padding-bottom: 40px; } }
+
+.header-content__logo {
+  grid-column: 1; }
+
+.header-content__logo-img {
+  width: 145px;
+  height: 47px; }
+  @media screen and (min-width: 960px) {
+    .header-content__logo-img {
+      width: 210px;
+      height: 68px; } }
+
+.header-content__nav {
+  grid-column: 3; }
+  .header-content__nav ul {
+    display: flex;
+    justify-content: right; }
+
+.header-content__nav-link {
+  height: 34px;
+  margin-left: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: #FF6060; }
+  @media screen and (min-width: 576px) {
+    .header-content__nav-link {
+      font-size: 2.0rem; } }
+  @media screen and (min-width: 960px) {
+    .header-content__nav-link {
+      margin-left: 57px;
+      font-size: 2.4rem; } }
+
+.active {
+  text-decoration: underline; }
+
+/**
+* _Home.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style de la page d'accueil pour ce projet.
+* Date: novembre 2021. 
+*/
+.home-content {
+  padding-left: 20px;
+  padding-right: 20px; }
+  @media screen and (min-width: 960px) {
+    .home-content {
+      padding-left: 100px;
+      padding-right: 100px; } }
+
+.home-content__bandeau {
+  overflow: hidden;
+  height: 111px;
+  border-radius: 10px; }
+  @media screen and (min-width: 768px) {
+    .home-content__bandeau {
+      border-radius: 25px;
+      height: 180px; } }
+  @media screen and (min-width: 960px) {
+    .home-content__bandeau {
+      height: 223px; } }
+
+.home-content__gallery {
+  width: 100%;
+  height: auto;
+  margin-top: 22px;
+  margin-bottom: 50px;
+  border-radius: 25px;
+  background-color: primary-background-home; }
+  @media screen and (min-width: 768px) {
+    .home-content__gallery {
+      margin-top: 43px;
+      background-color: #F7F7F7; } }
+
+/**
+* _about.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style de la page about pour ce projet.
+* Date: novembre 2021. 
+*/
+.about-content {
+  padding-left: 20px;
+  padding-right: 20px; }
+  @media screen and (min-width: 960px) {
+    .about-content {
+      padding-left: 100px;
+      padding-right: 100px; } }
+
+.about-content__bandeau {
+  overflow: hidden;
+  height: 223px;
+  border-radius: 25px; }
+
+.about-dropdown {
+  max-width: 1023px;
+  margin: 19px auto 0 auto;
+  min-height: 180px; }
+  .about-dropdown button {
+    height: 30px;
+    font-size: 1.3rem; }
+  .about-dropdown h2 {
+    font-size: 1.3rem; }
+  @media screen and (min-width: 960px) {
+    .about-dropdown {
+      margin: 31px auto 0 auto;
+      min-height: 300px; }
+      .about-dropdown li,
+      .about-dropdown p,
+      .about-dropdown button {
+        font-size: 2.4rem; }
+      .about-dropdown button {
+        height: 47px; } }
+
+/**
+* _describ.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style de la page describ pour ce projet.
+* Date: novembre 2021. 
+*/
+.descriptif-content {
+  padding-left: 20px;
+  padding-right: 20px; }
+  @media screen and (min-width: 960px) {
+    .descriptif-content {
+      padding-left: 100px;
+      padding-right: 100px; } }
+
+.descriptif-content__slideshow {
+  overflow: hidden;
+  height: 255px;
+  border-radius: 25px; }
+  @media screen and (min-width: 960px) {
+    .descriptif-content__slideshow {
+      height: 415px; } }
+
+.description-content__center {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin-top: 19px; }
+  @media screen and (min-width: 960px) {
+    .description-content__center {
+      margin-top: 31px;
+      flex-direction: row; } }
+
+.content-center__information-location {
+  width: 100%;
+  color: #FF6060;
+  margin-bottom: 15px; }
+  .content-center__information-location h2 {
+    padding-bottom: 7px;
+    font-size: 1.8rem; }
+  .content-center__information-location p {
+    font-size: 1.4rem;
+    padding-bottom: 10px; }
+  @media screen and (min-width: 960px) {
+    .content-center__information-location {
+      width: 70%; }
+      .content-center__information-location h2 {
+        padding-bottom: 10px;
+        font-size: 3.6rem; }
+      .content-center__information-location p {
+        font-size: 1.8rem;
+        padding-bottom: 20px; } }
+
+.content-center__information-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px; }
+  @media screen and (min-width: 960px) {
+    .content-center__information-user {
+      width: 30%;
+      flex-direction: column-reverse;
+      align-items: flex-end; } }
+
+.information-user__card {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: auto;
+  text-align: right; }
+  .information-user__card p {
+    width: 80px;
+    color: #FF6060; }
+  .information-user__card img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-left: 10px; }
+  @media screen and (min-width: 960px) {
+    .information-user__card p {
+      font-size: 1.8rem; }
+    .information-user__card img {
+      width: 64px;
+      height: 64px; } }
+
+.description-dropDown {
+  width: 100%;
+  min-height: 90px;
+  margin-top: 16px; }
+  .description-dropDown button {
+    height: 30px;
+    font-size: 1.3rem; }
+  @media screen and (min-width: 960px) {
+    .description-dropDown {
+      min-height: 80px;
+      display: grid;
+      grid-template-columns: 47% 47%;
+      justify-content: space-between;
+      margin-top: 24px; }
+      .description-dropDown li,
+      .description-dropDown p,
+      .description-dropDown button {
+        font-size: 1.8rem; }
+      .description-dropDown button {
+        height: 52px; } }
+
+/**
+* _notfound.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style pour la page 404 de ce projet.
+* Date: novembre 2021. 
+*/
+.content-notFound {
+  display: block;
+  width: 100%;
+  height: 745px; }
+  @media screen and (min-width: 960px) {
+    .content-notFound {
+      height: 916px; } }
+
+.notFound-title {
+  padding-top: 169px;
+  font-size: 9.6rem;
+  font-weight: 700;
+  color: #FF6060;
+  text-align: center; }
+  @media screen and (min-width: 960px) {
+    .notFound-title {
+      font-size: 28.8rem; } }
+
+.notFound-text {
+  padding-top: 11px;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #FF6060; }
+  @media screen and (min-width: 960px) {
+    .notFound-text {
+      padding-top: 66px;
+      font-size: 3.6rem; } }
+
+.notFound-link {
+  padding-top: 133px;
+  text-align: center; }
+  @media screen and (min-width: 960px) {
+    .notFound-link {
+      padding-top: 183px; } }
+  .notFound-link__a {
+    font-size: 1.4rem;
+    color: #FF6060;
+    text-decoration: underline; }
+    @media screen and (min-width: 960px) {
+      .notFound-link__a {
+        font-size: 1.8rem; } }

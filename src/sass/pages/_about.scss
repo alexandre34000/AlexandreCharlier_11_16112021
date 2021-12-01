@@ -1,0 +1,53 @@
+/**
+* _about.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style de la page about pour ce projet.
+* Date: novembre 2021. 
+*/
+
+.about-content {
+  @include externalPaddingMobile;
+
+  @include desktop {
+    @include externalPaddingDesktop;
+  }
+}
+
+.about-content__bandeau {
+  overflow: hidden;
+  height: 223px;
+  border-radius: 25px;
+}
+
+.about-dropdown {
+  max-width: 1023px;
+  margin: 19px auto 0 auto;
+  min-height: 180px;
+
+  & button {
+    height: 30px;
+    font-size: $font-size-sm;
+  }
+
+  & h2 {
+    font-size: $font-size-sm;
+  }
+
+  @include desktop {
+    margin: 31px auto 0 auto;
+    min-height: 300px;
+
+    & li,
+    p,
+    button {
+      font-size: $font-size-lg;
+    }
+
+    & button {
+      height: 47px;
+    }
+  }
+
+}

@@ -1,0 +1,72 @@
+/**
+* _header.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style du header avec la navigation pour ce projet.
+* Date: novembre 2021. 
+*/
+
+.header-container {
+    width: 100%;
+    height: auto;
+}
+
+.header-content {
+    display: grid;
+    grid-template-columns: (auto auto 50%);
+    align-items: center;
+    background-color: $primary-background-white;
+    @include externalPaddingMobile;
+    padding-top: 20px;
+    padding-bottom: 8px;
+
+    @include desktop {
+        @include externalPaddingDesktop;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.header-content__logo {
+    grid-column: 1;
+}
+
+.header-content__logo-img {
+    width: 145px;
+    height: 47px;
+
+    @include desktop {
+        width: 210px;
+        height: 68px;
+    }
+}
+
+.header-content__nav {
+    grid-column: 3;
+
+    & ul {
+        display: flex;
+        justify-content: right;
+    }
+}
+
+.header-content__nav-link {
+    height: 34px;
+    margin-left: 10px;
+    font-family: $font-texte;
+    color: $primary-color;
+
+    @include mobile-landscape {
+        font-size: 2.0rem;
+    }
+
+    @include desktop {
+        margin-left: 57px;
+        font-size: $font-size-lg;
+    }
+}
+
+.active {
+    text-decoration: underline;
+}

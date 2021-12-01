@@ -1,0 +1,23 @@
+
+@import "./utils/variables";
+@import "./utils/mixins";
+
+@import "./bases/bases";
+@import "./bases/fonts";
+
+@import "./components/cards";
+@import "./components/collapseBar";
+@import "./components/slideshow";
+@import "./components/stars";
+@import "./components/tags";
+
+@import "./layout/bandeau";
+@import "./layout/containerCards";
+@import "./layout/dropdown";
+@import "./layout/footer";
+@import "./layout/header";
+
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/describ";
+@import "./pages/notfound"; 

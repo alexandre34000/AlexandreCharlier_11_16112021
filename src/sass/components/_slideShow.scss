@@ -1,0 +1,69 @@
+/**
+* _slideShow.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style du slideShow pour le composant descriptif de ce  ce projet.
+* Date: novembre 2021. 
+*/
+.content-slideShow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slideShow-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slideShow-arrow {
+    display: none;
+    position: absolute;
+    top: 40%;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    transition: transform .4s;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+
+    @include desktop {
+        display: block;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.left {
+    left: 10px;
+    background-image: url("../../assets/arrow-left.png");
+
+    @include desktop {
+        left: 20px;
+    }
+}
+
+.right {
+    right: 10px;
+    background-image: url("../../assets/arrow-right.png");
+
+    @include desktop {
+        right: 20px;
+    }
+}
+
+.slideShow-number {
+    display: block;
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    color: $color-white;
+    font-size: $font-size-md;
+}

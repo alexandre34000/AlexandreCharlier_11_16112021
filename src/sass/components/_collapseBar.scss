@@ -1,0 +1,43 @@
+/**
+* _collapseBar.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style des button collapse pour le componsant dropDown et descriptif de ce  ce projet.
+* Date: novembre 2021. 
+*/
+
+.dropdown-btn {
+    display:block;
+    position: relative;
+    width: 100%;
+    padding: 0 11px;
+    background-color: $primary-background-button;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: $primary-font-button;
+  //  font-weight: 500;
+
+    @include desktop {
+        padding: 0 18px;
+    }
+}
+
+.dropdown-btn__arrowup {
+    position: absolute;
+    top: 9px;
+    right: 18px;
+    width: 17px;
+
+    @include desktop {
+        top: 15px;
+        width: 30px;
+        right: 11px;
+    }
+}
+
+.rotate {
+    transform: rotate(180deg);
+}

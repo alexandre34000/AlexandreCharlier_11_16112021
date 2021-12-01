@@ -1,0 +1,28 @@
+/**
+* _stars.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style des stars rating pour le composant descriptif de ce  ce projet.
+* Date: novembre 2021. 
+*/
+
+.star {
+    display: inline-block;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+
+    @include desktop {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.on {
+    background-image: url("../../assets/star-red-desktop.png");
+}
+
+.off {
+    background-image: url("../../assets/star-grey-desktop.png");
+}

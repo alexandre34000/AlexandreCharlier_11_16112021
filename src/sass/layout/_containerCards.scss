@@ -1,0 +1,20 @@
+/**
+* _containerCards.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style du container des cards pour la page home de ce  ce projet.
+* Date: novembre 2021. 
+*/
+
+.content-gallery {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+
+    @include tablette-only {
+        padding: 45px 40px 25px 40px;
+    }
+}

@@ -1,0 +1,54 @@
+/**
+* _cards.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style des cards pour la page home de ce  ce projet.
+* Date: novembre 2021. 
+*/
+
+.content-section {
+    position: relative;
+    min-width: 305px;
+    max-width: 335px;
+    height: 255px;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    @include desktop {
+        width: 340px;
+        height: 340px;
+        margin: 25px 5px;
+    }
+}
+
+.content-section:after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 10px;
+}
+
+.content-section__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.content-section__text {
+    position: absolute;
+    width: 250px;
+    height: 45px;
+    left: 20px;
+    bottom: 8px;
+    font-size: $font-size-md;
+    color: $color-white;
+    z-index: 1;
+    overflow: hidden;
+}

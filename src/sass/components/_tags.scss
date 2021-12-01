@@ -1,0 +1,30 @@
+/**
+* _tags.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style des tags de ce projet.
+* Date: novembre 2021. 
+*/
+
+.content-tags {
+  display: inline-block;
+  width: 84px;
+  height: 18px;
+  color: $primary-font-button;
+  background-color: $primary-background-button;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 18px;
+  margin-right: 10px;
+  overflow: hidden;
+
+  @include desktop {
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    line-height: 25px;
+    font-size: $font-size-exsm;
+
+  }
+}

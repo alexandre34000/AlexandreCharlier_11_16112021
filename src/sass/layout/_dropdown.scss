@@ -1,0 +1,52 @@
+/**
+* _dropDown.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style des dropDowns pourt la page About et descriptif de ce  ce projet.
+* Date: novembre 2021. 
+*/
+
+.dropdown-content {
+    border-radius: 0 0 50px 50px;
+    width: 100%;
+    margin-bottom: 20px;
+
+    @include desktop {
+        margin-bottom: 30px;
+    }
+}
+
+.dropdown-list {
+    display: block;
+    width: 100%;
+    max-height: 0;
+    margin-top: -5px;
+    border-radius: 0 0 5px 5px;
+    background-color: $primary-background-grey-light;
+    color: $primary-color;
+    font-weight: 400;
+    overflow: hidden;
+    -webkit-animation: slideDown 1000ms linear 0ms 1 normal forwards;
+    -moz-animation: slideDown 1000ms linear 0ms 1 normal forwards;
+    -o-animation: slideDown 1000ms linear 0ms 1 normal forwards;
+    animation: slideDown 1000ms linear 0s 1 normal forwards;
+}
+
+.dropdown-list__ul {
+    padding: 22px 11px 19px 11px;
+
+    @include desktop {
+        padding: 33px 18px 19px 18px;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        max-height: 0;
+    }
+
+    100% {
+        max-height: 500px;
+    }
+}

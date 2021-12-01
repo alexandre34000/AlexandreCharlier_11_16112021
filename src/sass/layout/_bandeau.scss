@@ -1,0 +1,53 @@
+/**
+* _bandeau.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style du bandeau pour ce projet.
+* Date: novembre 2021. 
+*/
+
+
+.bandeau-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+
+    @include desktop {
+        justify-content: center;
+    }
+}
+
+.bandeau-content__img {
+    height: 100%;
+    width: 100%;
+    object-position: 100% 100%;
+    object-fit: cover;
+
+    @include mobile-landscape {
+        object-position: 50% 50%;
+    }
+}
+
+.filter {
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%);
+}
+
+.bandeau-content__text {
+    display: block;
+    position: absolute;
+    width: 80%;
+    padding-left: 20px;
+    color: $color-white;
+    font-size: $font-size-lg;
+
+    @include tablette-only {
+        width: auto;
+        font-size: $font-size-big;
+
+    }
+}

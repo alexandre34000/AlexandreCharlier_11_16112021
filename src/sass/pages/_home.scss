@@ -1,0 +1,46 @@
+/**
+* _Home.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : style de la page d'accueil pour ce projet.
+* Date: novembre 2021. 
+*/
+
+
+.home-content {
+  @include externalPaddingMobile;
+
+  @include desktop {
+    @include externalPaddingDesktop;
+  }
+}
+
+.home-content__bandeau {
+  overflow: hidden;
+  height: 111px;
+  border-radius: 10px;
+
+  @include tablette-only {
+    border-radius: 25px;
+    height: 180px;
+  }
+
+  @include desktop {
+    height: 223px;
+  }
+}
+
+.home-content__gallery {
+  width: 100%;
+  height: auto;
+  margin-top: 22px;
+  margin-bottom: 50px;
+  border-radius: 25px;
+  background-color: primary-background-home;
+
+  @include tablette-only {
+    margin-top: 43px;
+    background-color: $primary-background-grey-light;
+  }
+}

@@ -1,0 +1,50 @@
+/**
+* _variables.scss 1.0 novembre 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier_11_16112021
+* Theme Name : Kasa.
+* Description : déclaration des variables pour ce projet.
+* Date: novembre 2021. 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*--colors and score WCAG--*/
+$primary-background-home: #E5E5E5;
+$primary-background-grey:#F6F6F6;
+$primary-background-grey-light: #F7F7F7;
+$primary-background-white: #FFFFFF;
+$primary-background-black: #000000; 
+
+/*--Buttons--*/
+$primary-background-button: #FF6060;
+$primary-font-button: #FFFFFF;
+
+/*--links--*/
+$primary-color : #FF6060;
+
+/*--divers--*/
+$color-white:#ffffff;
+
+/*--font--*/
+$font-size-min: 1.2rem;
+$font-size-sm: 1.3rem;
+$font-size-exsm: 1.4rem;
+$font-size-md: 1.8rem;
+$font-size-lg: 2.4rem;
+$font-size-exlg: 3.6rem;
+$font-size-big: 4.8rem;
+
+/*--font-familly--*/
+$font-texte : 'Montserrat', sans-serif;
+
+/*--media query--*/
+$breakpoints:(
+    mobile: 320px,
+    mobile-landscape: 576px,
+    tablette: 768px,
+    desktop: 960px,
+    tv: 1400px
+);
+
+
+
